@@ -11,8 +11,8 @@
       'REPO_INFO' => 'https://github.com/api/v2/json/repos/show/%s/%s',
       'BRANCHES'  => 'https://github.com/api/v2/json/repos/show/%s/%s/branches',
       'TAGS'      => 'https://github.com/api/v2/json/repos/show/%s/%s/tags',
-      'COMMITS'   => 'http://github.com/api/v2/json/commits/list/%s/%s/%s',
-      'COMMIT'    => 'http://github.com/api/v2/json/commits/show/%s/%s/%s');
+      'COMMITS'   => 'https://github.com/api/v2/json/commits/list/%s/%s/%s',
+      'COMMIT'    => 'https://github.com/api/v2/json/commits/show/%s/%s/%s');
     
     /**
      * Permission name
