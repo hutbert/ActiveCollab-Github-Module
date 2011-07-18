@@ -1,2 +1,11 @@
 .file_toggle {text-align:right;width:90px;}
 .file_toggle > a:hover {cursor:pointer;}
+
+#repository_history
+    #branch_tag_form {  float:right;
+                        -moz-box-shadow: 1px 1px 1px #DEDEDE;
+                        -webkit-box-shadow: 1px 1px 1px #DEDEDE;
+                        border: 1px solid #DEDEDE;
+                        border-radius:5px;
+                        padding:5px 20px;
+                      }

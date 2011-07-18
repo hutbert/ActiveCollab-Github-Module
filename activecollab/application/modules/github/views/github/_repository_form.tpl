@@ -7,7 +7,7 @@
   {label for=repositoryUrl required=yes}{lang}Repository URL or directory:{/lang}{/label}
   {text_field name='repository[url]' value=$repository_data.url id=repositoryUrl class='title required'}
 {/wrap}
-
+{*
 <div class="col">
 {wrap field=username}
   {label for=repositoryUsername}{lang}Username{/lang}{/label}
@@ -21,6 +21,7 @@
   {password_field name='repository[password]' value=$repository_data.password id=repositoryPassword}
 {/wrap}
 </div>
+*}
 <div class="clear"></div>
 {if $logged_user->canSeePrivate()}
   {wrap field=visibility}

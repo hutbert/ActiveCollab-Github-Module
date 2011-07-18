@@ -83,8 +83,8 @@
      */
     var $field_map = array(
     'root_path' => 'body',
-    'username' => 'varchar_field_1',
-    'password' => 'varchar_field_2',
+    //'username' => 'varchar_field_1',
+    //'password' => 'varchar_field_2',
     'url' => 'text_field_1'
     );
   
