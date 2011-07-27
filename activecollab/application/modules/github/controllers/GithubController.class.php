@@ -155,7 +155,7 @@
       $date_format = 'F j. Y';
       foreach($commits as $commit) {
         $commit->short_id = substr($commit->id, 0, 9).'...'.substr($commit->id, -9);
-        $commit->message = $this->analyzeCommitMessage('Ticket #1: '.$commit->message);
+        $commit->message = $this->analyzeCommitMessage($commit->message);
                 
         $commit_formatted_date = date($date_format, strtotime($commit->committed_date));
         if(count($grouped_commits) == 0 || !isset($grouped_commits[$commit_formatted_date])) {
