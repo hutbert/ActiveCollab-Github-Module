@@ -21,10 +21,6 @@ class GithubRepositories extends ProjectObjects {
     if (is_foreachable($repositories)) {
       foreach ($repositories as $repository) {
       	$repository->last_commit = $repository->getLastCommit();
-      	if(!is_null($repository->last_commit) && !is_int($repository->last_commit->committed_date)) {
-      	  $repository->last_commit->committed_date = strtotime($repository->last_commit->committed_date);
-    	  }
-    	  
       	$repository->last_tag = $repository->getLastTag();
       }
     }
